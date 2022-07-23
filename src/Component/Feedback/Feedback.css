@@ -1,0 +1,28 @@
+.Feedback{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.Feedback > input[type='submit'] {
+    background: #ff508d;
+      display: block;
+      text-align: center;
+      width: 100%;
+      font-weight: 700;
+      border: 0px solid cornflowerblue;
+      padding: 5px 4px;
+      outline: none;
+      color: white;
+      border-radius: 6px;
+      transition: .25s;
+      cursor: pointer;
+      margin-top: 10px;
+  
+  }
+  .Feedback > input[type='submit']:hover{
+    background: #ff3d81;
+      display: block;
+      color: black;
+     padding: 5px 4px;
+  
+  }

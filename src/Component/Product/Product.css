@@ -1,0 +1,76 @@
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  max-height: 486px;
+  min-width: 100px;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: white ;
+  z-index: 1;
+  border-radius:20PX ;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.product > img {
+  width: 30%;
+  max-height: 50%;
+  object-fit: contain;
+  margin-bottom: 15px;
+}
+
+.product > button {
+  background: #ff508d;
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    border: 0px solid cornflowerblue;
+    padding: 3px 4px;
+    outline: none;
+    color: white;
+    border-radius: 6px;
+    transition: .25s;
+    cursor: pointer;
+
+}
+.product > button:hover{
+  background: #ff3d81;
+    display: block;
+    color: black;
+   padding: 3px 6px;
+
+}
+
+.price {
+  margin-top: 5px;
+}
+
+.info {
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.rating {
+  display: flex;
+}
+
+.title {
+  color: black;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+i {
+  vertical-align: middle;
+}
+.product > span{
+  color:#ff508d;
+  cursor:pointer;
+}
+.product > span::selection{
+  color:#ff3d81
+}

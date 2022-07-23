@@ -1,0 +1,41 @@
+.home {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  display: flex;
+}
+
+.item-container {
+  overflow:inherit;
+  display: flex;
+  color: black;
+  background-color: #dddddd;
+  padding: 10px;
+}
+
+.item-container button{
+    background: #dddddd;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: block;
+    text-align: center;
+    border: 0px solid cornflowerblue;
+    padding: 3px 4px;
+    outline: none;
+    color: black;
+    border-radius: 6px;
+    transition: .25s;
+    cursor: pointer;
+
+}
+.item-container button:hover{
+	background: #fb71a1;
+}
+
+.home-row {
+  display: flex;
+  z-index: 1;
+  margin-left: 5px;
+  margin-right: 5px;
+}

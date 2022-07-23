@@ -1,0 +1,43 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 0.5rem;
+  right: 0.5rem;
+  animation: fadeIn 700ms ease-in-out 1s both;
+  cursor: pointer;
+  float: right;
+  z-index: 2;
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.back-top-container {
+  height: 40px;
+  text-align: center;
+  background-color: #ff508d;
+  color: white;
+  margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  vertical-align: middle;
+
+}
+.back-top-container > span{
+position: absolute;
+    left: 12px;
+    top: 8px;
+}
+.back-top-container:hover{
+  
+    color: black;
+  background-color: #ff3d81;;
+  border:0.5px solid #37475a ;
+}
