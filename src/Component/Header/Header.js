@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { logoutInitiate } from "../../redux/actions";
 import Logo from "../../logo.svg";
 
-function Header() {
+function Header({onSearch,onSetsearchfor}) {
   const { basket,favourite, user } = useSelector((state) => state.data);
   let dispatch = useDispatch();
   const handleAuthentication = () => {
@@ -22,8 +22,8 @@ function Header() {
       </Link>
       
       <div className='search'>
-        <input type='text' className='searchInput' />
-        <SearchIcon className='searchIcon' />
+        <input type='text' className='searchInput'   onChange={(e) => onSetsearchfor(e.target.value)}/>
+        <SearchIcon className='searchIcon'  onClick={onSearch} />
       </div>
       <div className='header-nav'>
         <Link to={`${user ? '/' : '/login'}`} className='header-link'>
